@@ -9,7 +9,7 @@ RF24 radio(9, 10);  // CE, CSN
 //address through which two modules communicate.
 const byte address[6] = "00001";
 int vert = A0;   
-int hori = A1;// select the input pin for the potentiometer    // select the pin for the LED
+int hori = A1;// select the input pin for the potentiomete
 int verticalVal = 0;  // variable to store the value coming from the sensor
 int horizontalVal = 0;
 int arr[2];
@@ -25,7 +25,7 @@ void setup()
 void loop()
 {
   //Send message to receiver
-  //const char text[] = "";
+ 
   int forward = analogRead(vert);
   int left_right = analogRead(hori);
    arr[0] = forward;
